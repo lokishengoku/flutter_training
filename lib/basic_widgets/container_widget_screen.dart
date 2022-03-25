@@ -16,33 +16,34 @@ class ContainerWidgetScreen extends StatelessWidget {
           ),
           padding: const EdgeInsets.all(16),
           margin: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: Colors.blue,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: Colors.green,
-              style: BorderStyle.solid,
-              width: 2,
-            ),
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.black45,
-                blurRadius: 5,
-                spreadRadius: 2,
-                offset: Offset(3, 5),
-              )
-            ],
-            // shape: BoxShape.circle,
-          ),
-          constraints: const BoxConstraints(
-            minWidth: 150,
-            maxWidth: 300,
-            minHeight: 50,
-            maxHeight: 100,
-          ),
+          color: Colors.blue,
+          // decoration: BoxDecoration(
+          //   color: Colors.blue,
+          //   borderRadius: BorderRadius.circular(16),
+          //   border: Border.all(
+          //     color: Colors.green,
+          //     style: BorderStyle.solid,
+          //     width: 2,
+          //   ),
+          //   boxShadow: const [
+          //     BoxShadow(
+          //       color: Colors.black45,
+          //       blurRadius: 5,
+          //       spreadRadius: 2,
+          //       offset: Offset(3, 5),
+          //     )
+          //   ],
+          //   // shape: BoxShape.circle,
+          // ),
+          // constraints: const BoxConstraints(
+          //   minWidth: 150,
+          //   maxWidth: 300,
+          //   minHeight: 50,
+          //   maxHeight: 100,
+          // ),
           // alignment: Alignment.topLeft,
-          // width: 300,
-          // height: 150,
+          width: 300,
+          height: 150,
           // transform: Matrix4.rotationZ(1),
         ),
       ),

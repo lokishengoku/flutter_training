@@ -17,21 +17,29 @@ class ButtonWidgetScreen extends StatelessWidget {
               onPressed: () {},
               child: const Text('Text Button'),
             ),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {},
               child: const Text('Elevated Button'),
+              style: ElevatedButton.styleFrom(
+                primary: const Color(0xFFFFCD17),
+                onPrimary: Colors.black,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+                textStyle: const TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 32,
+                  vertical: 16,
+                ),
+              ),
             ),
+            const SizedBox(height: 16),
             OutlinedButton(
               onPressed: () {},
               child: const Text('Outlined Button'),
-              style: TextButton.styleFrom(
-                primary: Colors.deepOrange,
-                onSurface: Colors.green,
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-              ),
             ),
           ],
         ),
