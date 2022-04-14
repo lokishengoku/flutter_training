@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_training/screen/exercise_screen.dart';
 
-import 'basic_widgets_screen.dart';
+import 'basic_widgets_exercise_screen.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class ExerciseScreen extends StatelessWidget {
+  static const String route = '/exercise_screen.dart';
+  const ExerciseScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +20,9 @@ class HomeScreen extends StatelessWidget {
               child: const Text('1. Basic Dart'),
             ),
             ElevatedButton(
-              onPressed: () =>
-                  Navigator.pushNamed(context, BasicWidgetsScreen.route),
+              onPressed: () => Navigator.pushNamed(
+                  context, BasicWidgetsExerciseScreen.route),
               child: const Text('2. Basic Widgets'),
-            ),
-            ElevatedButton(
-              onPressed: () =>
-                  Navigator.pushNamed(context, ExerciseScreen.route),
-              child: const Text('3. Exercise'),
             ),
           ],
         ),

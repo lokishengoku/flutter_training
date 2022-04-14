@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_training/screen/basic_widgets_exercise_screen.dart';
+import 'package:flutter_training/screen/basic_widgets_screen.dart';
+import 'package:flutter_training/screen/exercise_screen.dart';
 import 'package:flutter_training/screen/home_screen.dart';
 
 import 'basic_widgets/index.dart';
@@ -28,6 +31,9 @@ class MyApp extends StatelessWidget {
         ImageWidgetScreen.route: (context) => const ImageWidgetScreen(),
         ButtonWidgetScreen.route: (context) => const ButtonWidgetScreen(),
         CombineScreen.route: (context) => const CombineScreen(),
+        ExerciseScreen.route: (context) => const ExerciseScreen(),
+        BasicWidgetsExerciseScreen.route: (context) =>
+            const BasicWidgetsExerciseScreen(),
       },
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'index.dart';
+import 'package:flutter_training/basic_widgets/index.dart';
 
 class BasicWidgetsScreen extends StatelessWidget {
   static const String route = '/basic_widgets_screen';

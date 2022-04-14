@@ -1,4 +1,3 @@
-export 'basic_widgets_screen.dart';
 export 'column_widget_screen.dart';
 export 'row_widget_screen.dart';
 export 'container_widget_screen.dart';
